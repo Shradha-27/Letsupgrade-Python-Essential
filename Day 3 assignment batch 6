@@ -1,0 +1,31 @@
+Assignment 1: sum of n numbers with the help of while loop
+
+# Sum of natural numbers up to num
+
+num = 16
+
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   # use while loop to iterate until zero
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is", sum)
+
+Assignment 2: take integer and find weather it is prime or not
+
+num = int(input("Enter a number: "))  
+  
+if num > 1:  
+   for i in range(2,num):  
+       if (num % i) == 0:  
+           print(num,"is not a prime number")  
+           print(i,"times",num//i,"is",num)  
+           break  
+   else:  
+       print(num,"is a prime number")  
+         
+else:  
+   print(num,"is not a prime number") 
