@@ -1,0 +1,89 @@
+Assignment 2 islower() with different kind of strings
+
+=>In Python, islower() is a built-in method used for string handling.
+The islower() methods returns “True” if all characters in the string are lowercase, Otherwise, It returns “False”.
+This function is used to check if the argument contains any lowercase characters such as :
+
+abcdefghijklmnopqrstuvwxyz 
+Syntax :
+
+string.islower()
+Parameters:
+islower() does not take any parameters
+Returns :
+1.True- If all characters in the string are lower.
+2.False- If the string contains 1 or more non-lowercase characters.
+Examples:
+
+Input : string = 'shradhamudda'
+Output : True
+
+Input : string = 'shradhamudda'
+Output : False 
+
+Errors And Exceptions
+
+It returns “True” for whitespaces
+It does not take any arguments, Therefore, It returns an error if a parameter is passed.
+Digits and symbols return “True”, Only a lowercase letter returns “false”.
+# Python code for implementation of isupper() 
+
+  
+# checking for lowercase characters 
+
+string = 'shradhamudda'
+
+print(string.islower()) 
+
+  
+
+string = 'shradhamudda'
+
+print(string.islower()) 
+
+Output:
+True
+False
+
+Assignment 1 find all occurance of substring in the given string
+"What we think we become;we are python programmer"
+Print index values.
+=>
+# Python3 code to demonstrate working of 
+# All occurrences of substring in string 
+# Using list comprehension + startswith() 
+
+  
+# initializing string  
+
+test_str = "what we think we become;we are python programmer"
+
+  
+# initializing substring 
+
+test_sub = "what we think we become"
+
+  
+# printing original string  
+
+print("The original string is : " + test_str) 
+
+  
+# printing substring  
+
+print("The substring to find : " + test_sub) 
+
+  
+# using list comprehension + startswith() 
+# All occurrences of substring in string  
+
+res = [i for i in range(len(test_str)) if test_str.startswith(test_sub, i)] 
+
+  
+# printing result  
+
+print("The start indices of the substrings are : " + str(res)) 
+Output :
+The original string is :what we think we become ;we are python programmer
+The substring to find :what we think we become
+The start indices of the substrings are : [0, 8,
