@@ -1,0 +1,23 @@
+Assignment 
+
+# Python program to Convert a  
+# list to dictionary 
+
+  
+
+def Convert(lst): 
+
+    res_dct = {lst[i]: lst[i + 1] for i in range(0, len(lst), 2)} 
+
+    return res_dct 
+
+          
+# Driver code 
+
+lst 1 =  [1,2,3,4,5,7,8]
+let 2 =["a","b","c","d","e"]
+
+print(Convert(lst))
+
+Output:
+{"a":1,"b":2,"c":3,"d":4,"e":5}
